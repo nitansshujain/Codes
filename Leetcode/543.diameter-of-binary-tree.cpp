@@ -23,6 +23,7 @@ public:
         return solve(root).first - 1;
     }
 
+    // (diameter, height)
     pair<int, int> solve(TreeNode *root)
     {
         if (!root)
@@ -33,9 +34,9 @@ public:
         pair<int, int> left = solve(root->left);
         pair<int, int> right = solve(root->right);
 
-        int op1 = left.first;
-        int op2 = right.first;
-        int op3 = left.second + right.second + 1;
+        int op1 = left.first;                     // res at left only
+        int op2 = right.first;                    // res at right only
+        int op3 = left.second + right.second + 1; // res at both te sides of the root
 
         pair<int, int> res;
         res.first = max(op1, max(op2, op3));
