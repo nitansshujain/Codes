@@ -1,0 +1,16 @@
+{
+    "code-runner.runInTerminal": true,
+    "editor.formatOnSave": true,
+    "editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "editor.mouseWheelZoom": true,
+    "files.associations": {
+        "*html": "html",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
+}
