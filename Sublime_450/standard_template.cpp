@@ -104,6 +104,14 @@ public:
 	}
 };
 
+// Code for logN base 2
+int code_for_log2_n(int n) {
+	int MAXBITS = 0;
+	while ((1 << MAXBITS) & n) MAXBITS++;
+
+	MAXBITS--;
+	return MAXBITS;
+}
 
 // Program to calculate C(n, k)
 #include <bits/stdc++.h>
